@@ -1,43 +1,88 @@
-//estado da minha aplicação
-let numero = 0
+// numero
+let numero = 0;
 
-// alteradores de estado a aplicação
-
-function aumentarcem() {
-    numero = numero + 100
-    mostrarNaTela()
+// contas
+function maisum(){
+    numero = numero + 1;
+    mostrarnatela()
 }
 
-function aumentardez() {
-    numero = numero + 10
-    mostrarNaTela()
+function maisdez(){
+    numero = numero  + 10;
+    mostrarnatela();
 }
 
-function aumentar() {
-    numero = numero + 1
-    mostrarNaTela()
+function maiscem(){
+    numero = numero + 100;
+    mostrarnatela();
 }
 
-function diminuir() {
-    numero = numero - 1
-    mostrarNaTela()
+function maismil(){
+    numero = numero + 1000;
+    mostrarnatela();
 }
 
-function diminuirdez() {
-    numero = numero - 10
-    mostrarNaTela()
+function menosum(){
+    numero = numero - 1;
+    mostrarnatela();
 }
 
-function diminuircem() {
-    numero = numero - 100
-    mostrarNaTela()
+function menosdez(){
+    numero = numero - 10;
+    mostrarnatela();
 }
 
-//jogar o estado da aplicação na tela
-function mostrarNaTela() {
-    const p = document.querySelector("#resultado")
-    p.innerText = numero
+function menoscem(){
+    numero = numero - 100;
+    mostrarnatela();
 }
 
-// iniciar
-mostrarNaTela()
+function menosmil(){
+    numero = numero - 1000;
+    mostrarnatela();
+}
+
+function zerar(){
+    numero = numero - numero
+    mostrarnatela();
+}
+
+//limite
+public class Contador {
+    private int 0;
+    private int -9999;
+    private int 9999;
+
+    public Contador(int 0, int -9999, int 9999) {
+        this.valor = 0;
+        this.limiteMinimo = -9999;
+        this.limiteMaximo = 9999;
+    }
+
+    public void incrementar() {
+        if (valor < 9999) {
+            valor++;
+        } else {
+            System.out.println("Limite máximo alcançado.");
+        }
+    }
+
+    public void decrementar() {
+        if (valor > -9999) {
+            valor--;
+        } else {
+            System.out.println("Limite mínimo alcançado.");
+        }
+    }
+
+    public int getValor() {
+        return valor;
+    }
+}
+
+
+// tela
+function mostrarnatela(){
+    const p = document.querySelector("#resultado");
+    p.innerText = numero;
+}
