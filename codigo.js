@@ -47,38 +47,8 @@ function zerar(){
     mostrarnatela();
 }
 
-//limite
-public class Contador {
-    private int 0;
-    private int -9999;
-    private int 9999;
+//limitador
 
-    public Contador(int 0, int -9999, int 9999) {
-        this.valor = 0;
-        this.limiteMinimo = -9999;
-        this.limiteMaximo = 9999;
-    }
-
-    public void incrementar() {
-        if (valor < 9999) {
-            valor++;
-        } else {
-            System.out.println("Limite máximo alcançado.");
-        }
-    }
-
-    public void decrementar() {
-        if (valor > -9999) {
-            valor--;
-        } else {
-            System.out.println("Limite mínimo alcançado.");
-        }
-    }
-
-    public int getValor() {
-        return valor;
-    }
-}
 
 
 // tela
