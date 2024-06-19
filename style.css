@@ -21,3 +21,26 @@ div{
 p{
     font-size: 100px
 }
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button span {
+    margin-right: 8px; /* Espaçamento entre o texto e o ícone */
+}
+
+button svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
